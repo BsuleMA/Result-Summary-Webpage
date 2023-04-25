@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root{
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: hsl(0, 0%, 100%);
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 800px;
+    padding: 0;
+    margin-top: 75px;
+    border-radius: 30px;
+}
+.content{
+    display: flex;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 350px;
+}
+.result{
+    width: 50%;
+    height: inherit;
+    background-image: linear-gradient( hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    color: hsl(0, 0%, 100%);
+    border-radius: 30px;
+}
+.result .center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.result h1{
+    font-size: 18px;
+    margin-top: 40px;
+}
+.result .marks{
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 50%;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+.result .marks h1{
+    font-size: 40px;
+    margin-top: -5px;
+}
+.result .marks h2{
+    font-size: 10px;
+    margin-top: -38px;
+}
+.result p{
+    font-size: 15px;
+    text-align: center;
+    width: 70%;
+}
+.summary{
+    width: 50%;
+    border-radius: 30px;
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.summary div{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.summary div:nth-child(2){
+    color: hsl(0, 100%, 67%);
+    background-color: hsl(0, 79%, 95%);
+}
+.summary div:nth-child(3){
+    color: hsl(39, 100%, 56%);
+    background-color: hsl(39, 82%, 93%);
+}
+.summary div:nth-child(4){
+    color: hsl(166, 100%, 37%);
+    background-color: hsl(165, 85%, 92%);
+}
+.summary div:nth-child(5){
+    color: hsl(234, 85%, 45%);
+    background-color: hsl(235, 80%, 94%);
+    margin-bottom: 25px;
+}
+.summary button{
+    height: 40px;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+}
+.summary button:active{
+    cursor: pointer;
+    background-image: linear-gradient( hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+.summary div .number{
+    color: black;
+}
+
+footer{
+    display: block;
+    position: fixed;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: blue;
+}
+
+@media screen and (max-width:375px) {
+    .container{
+        width: 100%;
+        margin-top: 0;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .result{
+        width: 100%;
+        border-radius: 0 0 30px 30px;
+    }
+    .summary{
+        width: 280px;
+    }
+    .summary button{
+        margin-bottom: 30px;
+    }
+}
